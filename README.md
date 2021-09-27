@@ -59,4 +59,8 @@ It can help to do lot many things like..
  For Windows one can use py -m pip install <Module_Name> or pipwin 
  
  For iOs use pip installer directly
+ 
+ # install and Run Using Gitbash or CMD
+ 
+ git clone https://github.com/SahilShrivastava-Dev/Voice-Assistant
         
