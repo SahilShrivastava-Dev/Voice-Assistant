@@ -51,22 +51,22 @@ def date():
 def checktime(tt):
     hour = datetime.datetime.now().hour
     if ("morning" in tt):
-        if (hour >= 6 and hour < 12):
+        if ((hour >= 6) and (hour < 12)):
             speak("Good morning sir")
         else:
-            if (hour >= 12 and hour < 18):
+            if ((hour >= 12) and hour < 18)):
                 speak("it's Good afternoon sir")
-            elif (hour >= 18 and hour < 24):
+            elif ((hour >= 18) and (hour < 24)):
                 speak("it's Good Evening sir")
             else:
                 speak("it's Goodnight sir")
     elif ("afternoon" in tt):
-        if (hour >= 12 and hour < 18):
+        if ((hour >= 12) and (hour < 18)):
             speak("it's Good afternoon sir")
         else:
-            if (hour >= 6 and hour < 12):
+            if ((hour >= 6) and (hour < 12)):
                 speak("Good morning sir")
-            elif (hour >= 18 and hour < 24):
+            elif ((hour >= 18) and (hour < 24)):
                 speak("it's Good Evening sir")
             else:
                 speak("it's Goodnight sir")
@@ -108,7 +108,7 @@ def wishme_end():
 def takeCommand():
     r = sr.Recognizer()
     with sr.Microphone() as source:
-        print("Listing...")
+        print("Listening...")
         r.pause_threshold = 0.5
         audio = r.listen(source)
 
@@ -191,7 +191,7 @@ def weather():
 
 def personal():
     speak(
-        "I am Laila, version 1.0, I am an AI assistent, I am developed by Sahil Shrivastava on Jan 2020 in INDIA"
+        "I am Laila from the family of alexa siri and others, version 2.0, I am an AI assistant, I am developed by Sahil Shrivastava on Jan 2020 for External School Project"
     )
     speak("Now i hope you know me")
 
