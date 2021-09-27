@@ -121,9 +121,9 @@ def takeCommand():
         print(e)
         speak("Say that again please...")
 
-        return "None"
+        return ("None")
 
-    return query
+    return (query)
 
 
 #sending email function
@@ -148,11 +148,11 @@ def screenshot():
 def cpu():
     usage = str(psutil.cpu_percent())
     speak('CPU usage is at ' + usage)
-    print('CPU usage is at ' + usage)
+    print('CPU usage is at : ' + usage)
     battery = psutil.sensors_battery()
     speak("Battery is at")
     speak(battery.percent)
-    print("battery is at:" + str(battery.percent))
+    print("battery is at :" + str(battery.percent))
 
 
 #joke function
@@ -202,7 +202,6 @@ if __name__ == "__main__":
         query = takeCommand().lower()
 
         #time
-
         if ('time' in query):
             time()
 
@@ -255,8 +254,7 @@ if __name__ == "__main__":
                 speak("Email has sent")
             except Exception as e:
                 print(e)
-                speak(
-                    "Unable to send email check the address of the recipient")
+                speak("Unable to send email check the address of the recipient")
         elif ("search on google" in query or "open website" in query):
             speak("What should i search or open?")
             chromepath = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s'
