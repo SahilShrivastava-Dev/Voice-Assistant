@@ -104,7 +104,7 @@ def wishme_end():
     quit()
 
 
-#command by user function
+#command given by user function
 def takeCommand():
     r = sr.Recognizer()
     with sr.Microphone() as source:
